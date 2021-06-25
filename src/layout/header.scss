@@ -1,0 +1,22 @@
+.header-jspractico {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .nav-options ul {
+    display: flex;
+    list-style: none;
+    gap: 16px;
+    a {
+      text-decoration: none;
+      font: $headline5;
+      color: $color-pinklight;
+      &:hover {
+        color: $color-pink;
+      }
+    }
+    .weAreHere a {
+      color: $color-pink;
+    }
+  }
+}
