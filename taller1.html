@@ -48,7 +48,132 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <div class="taller1-container">
+        <h2>Calcula el área y perímetro de figuras:</h2>
+        <div class="figuras-container">
+          <div class="card">
+            <p class="card__title">Cuadrado</p>
+            <form action="" class="card--form">
+              <label for="ladoCuadrado" class="card--form__subtitle"
+                >¿Cuánto mide un lado?</label
+              >
+              <div class="div-Input-Cuadrado">
+                <input
+                  type="number"
+                  placeholder="número"
+                  id="ladoCuadrado"
+                  class="input"
+                />
+                <select name="" id="">
+                  <option value="cm">cm</option>
+                  <option value="m">m</option>
+                </select>
+              </div>
+              <div class="card--buttons">
+                <button class="button pinkprimary">Área</button>
+                <button class="button pinksecondary">Perímetro</button>
+              </div>
+              <p class="card--form__subtitle">Resultado:</p>
+              <div class="card--form__result">
+                <p class="text-result" id="resultCuadrado"></p>
+              </div>
+            </form>
+          </div>
+
+          <div class="card">
+            <p class="card__title">Triangulo</p>
+            <form action="" class="card--form">
+              <label for="ladoAtriangulo" class="card--form__subtitle"
+                >¿Cuánto mide un lado?</label
+              >
+              <div class="div-Input-Cuadrado">
+                <input
+                  type="number"
+                  placeholder="número"
+                  id="ladoAtriangulo"
+                  class="input"
+                />
+                <select name="" id="">
+                  <option value="cm">cm</option>
+                  <option value="m">m</option>
+                </select>
+              </div>
+              <label for="ladoBTriangulo" class="card--form__subtitle"
+                >¿Cuánto mide el otro lado?</label
+              >
+
+              <div class="div-Input-Cuadrado">
+                <input
+                  type="number"
+                  placeholder="número"
+                  id="ladoBTriangulo"
+                  class="input"
+                />
+                <select name="" id="">
+                  <option value="cm">cm</option>
+                  <option value="m">m</option>
+                </select>
+              </div>
+              <label for="baseTriangulo" class="card--form__subtitle"
+                >¿Cuánto mide la base?</label
+              >
+              <div class="div-Input-Cuadrado">
+                <input
+                  type="number"
+                  placeholder="número"
+                  id="baseTriangulo"
+                  class="input"
+                />
+                <select name="" id="">
+                  <option value="cm">cm</option>
+                  <option value="m">m</option>
+                </select>
+              </div>
+
+              <div class="card--buttons">
+                <button class="button pinkprimary">Área</button>
+                <button class="button pinksecondary">Perímetro</button>
+              </div>
+              <p class="card--form__subtitle">Resultado:</p>
+              <div class="card--form__result">
+                <p class="text-result" id="resultTriangulo"></p>
+              </div>
+            </form>
+          </div>
+
+          <div class="card">
+            <p class="card__title">circulo</p>
+            <form action="" class="card--form">
+              <label for="ladoCuadrado" class="card--form__subtitle"
+                >¿Cuál es el radio?</label
+              >
+              <div class="div-Input-Cuadrado">
+                <input
+                  type="number"
+                  placeholder="número"
+                  id="ladoCuadrado"
+                  class="input"
+                />
+                <select name="" id="">
+                  <option value="cm">cm</option>
+                  <option value="m">m</option>
+                </select>
+              </div>
+              <div class="card--buttons">
+                <button class="button pinkprimary">Área</button>
+                <button class="button pinksecondary">Perímetro</button>
+              </div>
+              <button class="button pinkprimary">Diametro</button>
+              <p class="card--form__subtitle">Resultado:</p>
+              <div class="card--form__result">
+                <p class="text-result" id="resultCirulo"></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
     <footer></footer>
   </body>
 </html>

@@ -1,9 +1,95 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Montserrat:wght@400;600;700&display=swap");
+.button {
+  border: 2px solid;
+  border-radius: 7px;
+  padding: 6px 12px;
+  font: 600 1.125rem/1.6875rem Montserrat;
+}
+
+.pinkprimary {
+  background-color: #d2004c;
+  color: white;
+  border: 2px solid #d2004c;
+  width: 100%;
+}
+
+.pinksecondary {
+  background-color: white;
+  color: #d2004c;
+  width: 100%;
+}
+
+.card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding-block: 30px;
+  gap: 8px;
+  border-radius: 17px;
+}
+
+@media (max-width: 1024px) {
+  .card {
+    width: 100%;
+    height: 400px;
+  }
+}
+@media (min-width: 1024px) {
+  .card {
+    padding-inline: 24px;
+    min-width: 273px;
+    width: 28%;
+    max-width: 384px;
+  }
+}
+.card__title {
+  font: 700 1.5rem/1.6499999762rem Lato;
+  color: #d2004c;
+}
+
+.card--form {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card--form__subtitle {
+  font: 400 1.125rem/1.6875rem Montserrat;
+}
+
+.div-Input-Cuadrado {
+  display: flex;
+  gap: 16px;
+}
+.div-Input-Cuadrado input {
+  padding: 8px;
+  width: 100%;
+}
+
+.card--buttons {
+  gap: 16px;
+  display: flex;
+}
+
+.card--form__result {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border: 2px solid #312f2f;
+  border-radius: 7px;
+}
+.card--form__result p {
+  font: 400 0.875rem/1.5rem Montserrat;
+}
+
 .header-jspractico {
   padding: 0 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 10vh;
 }
 .header-jspractico .nav-options ul {
   display: flex;
@@ -20,6 +106,37 @@
 }
 .header-jspractico .nav-options ul .weAreHere a {
   color: #d2004c;
+}
+
+.taller1-container {
+  padding: 0 20px;
+}
+.taller1-container h2 {
+  font: 700 2rem/2rem Lato;
+  text-align: center;
+  padding: 10px 0;
+}
+.taller1-container .figuras-container {
+  height: 88%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (max-width: 1024px) {
+  .taller1-container {
+    height: 90vh;
+  }
+}
+@media (min-width: 1024px) {
+  .taller1-container {
+    background-color: #fc8fb6;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
 }
 
 /*# sourceMappingURL=master.css.map */

@@ -1,0 +1,18 @@
+.button {
+  border: 2px solid;
+  border-radius: 7px;
+  padding: 6px 12px;
+  font: $button;
+}
+.pinkprimary {
+  background-color: $color-pink;
+  color: white;
+  border: 2px solid $color-pink;
+  width: 100%;
+}
+
+.pinksecondary {
+  background-color: white;
+  color: $color-pink;
+  width: 100%;
+}

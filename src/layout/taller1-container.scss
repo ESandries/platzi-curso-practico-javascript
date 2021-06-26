@@ -1,0 +1,27 @@
+.taller1-container {
+  padding: 0 20px;
+  h2 {
+    font: $headline3;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .figuras-container {
+    height: 88%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@include for-phone-tablet {
+  .taller1-container {
+    height: 90vh;
+  }
+}
+
+@include for-desktop-up {
+  .taller1-container {
+    background-color: $color-pinklight;
+  }
+}

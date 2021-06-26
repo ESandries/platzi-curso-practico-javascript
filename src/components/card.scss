@@ -1,0 +1,67 @@
+.card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding-block: 30px;
+  gap: 8px;
+  border-radius: 17px;
+}
+
+@include for-phone-tablet {
+  .card {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+@include for-desktop-up {
+  .card {
+    padding-inline: 24px;
+    min-width: 273px;
+    width: 28%;
+    max-width: 384px;
+  }
+}
+
+.card__title {
+  font: $headline4;
+  color: $color-pink;
+}
+
+.card--form {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card--form__subtitle {
+  font: $body1;
+}
+
+.div-Input-Cuadrado {
+  display: flex;
+  gap: 16px;
+  input {
+    padding: 8px;
+    width: 100%;
+  }
+}
+
+.card--buttons {
+  gap: 16px;
+  display: flex;
+}
+
+.card--form__result {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border: 2px solid rgb(49, 47, 47);
+  border-radius: 7px;
+
+  p {
+    font: $body2;
+  }
+}
