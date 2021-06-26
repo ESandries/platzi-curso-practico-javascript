@@ -18,19 +18,23 @@ function perimetroCuadrado(lado){
 function calcularAreaCuadrado(){
     const  input = document.getElementById("ladoCuadrado");
     const result = document.getElementById("resultCuadrado");
+    const unit = document.getElementById("unidadCuadrado");
+    const unitValue = unit.value;
     const value = input.value;
     
     const area = areaCuadrado(value);
-    result.innerText = "El área es " + area;
+    result.innerText = `El área es ${area} ${unitValue}'2`;
 }
 
 function calcularPerimetroCuadrado(){
     const input = document.getElementById("ladoCuadrado");
     const result = document.getElementById("resultCuadrado");
+    const unit = document.getElementById("unidadCuadrado");
+    const unitValue = unit.value;
     const value = input.value;
 
     const perimetro = perimetroCuadrado(value);
 
-    result.innerText = "El perímetro es " + perimetro;
+    result.innerText = `El perímetro es ${perimetro} ${unitValue}`;
 
 }
