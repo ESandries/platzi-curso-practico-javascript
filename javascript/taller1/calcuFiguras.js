@@ -38,9 +38,58 @@ function calcularPerimetroCuadrado(){
 
 }
 
+//Código del triangulo
 
+function formulaAreaTriangulo(altura, base){
+    return (base * altura) / 2
+}
 
+function formulaPerimetroTriangulo(ladoA, ladoB, base){
+    return ladoA +  ladoB + base;
+}
 
+function calcularAlturaTriangulo(ladoA, ladoB, base){
+    if(ladoA === ladoB){
+        return Math.sqrt((ladoA * ladoA) - ((base / 2) * (base / 2)))
+    } else{
+        return (ladoA * ladoB) / base
+    }
+}
+
+function calcularAreaTriangulo(){
+    const result = document.getElementById("resultTriangulo");
+    const unit = document.getElementById("selectBaseT")
+    let unitValue = unit.value;
+    let ladoA = document.getElementById("ladoAtriangulo");
+    let ladoAValue = ladoA.value;
+    let ladoB = document.getElementById("ladoBTriangulo");
+    let ladoBValue = ladoB.value;
+    let base = document.getElementById("baseTriangulo");
+    let baseValue = base.value;
+
+    let altura = calcularAlturaTriangulo(ladoAValue, ladoBValue, baseValue);
+    let area = formulaAreaTriangulo(altura, baseValue);
+    
+    result.innerText = `El área del triangulo es ${area} ${unitValue}´2`
+    
+}
+
+function calcularPerimetroTriangulo(){
+    const result = document.getElementById("resultTriangulo");
+    const unit = document.getElementById("selectBaseT")
+    let unitValue = unit.value;
+    let ladoA = document.getElementById("ladoAtriangulo");
+    let ladoAValue = ladoA.value;
+    let ladoB = document.getElementById("ladoBTriangulo");
+    let ladoBValue = ladoB.value;
+    let base = document.getElementById("baseTriangulo");
+    let baseValue = base.value;
+
+    let perimetro = formulaPerimetroTriangulo(ladoAValue, ladoBValue, baseValue);
+    
+    result.innerText = `El perímetro del triangulo es ${perimetro} ${unitValue}`
+    
+}
 
 
 

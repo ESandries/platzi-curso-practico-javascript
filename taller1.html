@@ -53,6 +53,7 @@
         <h2>Calcula el área y perímetro de figuras:</h2>
         <div class="figuras-container">
           <div class="card">
+            <!--cuadrado-->
             <p class="card__title">Cuadrado</p>
             <form action="" class="card--form">
               <label for="ladoCuadrado" class="card--form__subtitle"
@@ -95,6 +96,7 @@
           </div>
 
           <div class="card">
+            <!--Triangulo-->
             <p class="card__title">Triangulo</p>
             <form action="" class="card--form">
               <label for="ladoAtriangulo" class="card--form__subtitle"
@@ -138,15 +140,27 @@
                   id="baseTriangulo"
                   class="input"
                 />
-                <select name="" id="">
+                <select name="" id="selectBaseT">
                   <option value="cm">cm</option>
                   <option value="m">m</option>
                 </select>
               </div>
 
               <div class="card--buttons">
-                <button class="button pinkprimary">Área</button>
-                <button class="button pinksecondary">Perímetro</button>
+                <button
+                  class="button pinkprimary"
+                  type="button"
+                  onclick="calcularAreaTriangulo()"
+                >
+                  Área
+                </button>
+                <button
+                  class="button pinksecondary"
+                  type="button"
+                  onclick="calcularPerimetroTriangulo()"
+                >
+                  Perímetro
+                </button>
               </div>
               <p class="card--form__subtitle">Resultado:</p>
               <div class="card--form__result">
@@ -156,6 +170,7 @@
           </div>
 
           <div class="card">
+            <!--Circulo-->
             <p class="card__title">circulo</p>
             <form action="" class="card--form">
               <label for="ladoCuadrado" class="card--form__subtitle"
@@ -228,7 +243,7 @@
           </li>
           <li><a href="#">Contacto</a></li>
           <li><a href="#">¿Quíén hizo esta web?</a></li>
-          <li><a href="#">Politica de Privacidad</a></li>
+          <li><a href="#">Reportar un bug</a></li>
         </ul>
       </div>
       <p class="footer-copyright">
