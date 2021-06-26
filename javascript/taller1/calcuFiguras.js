@@ -75,10 +75,9 @@ function calcularAreaCirculo(){
     const unit = document.getElementById("selectCirculo");
     const value = input.value;
     const valueUnit = unit.value;
-    const area = formulaAreaCirculo(value);
 
+    const area = formulaAreaCirculo(value);
     result.innerText = `El área del circulo es: ${area} ${valueUnit}`
-    
 }
 
 function calcularCircunferencia(){
@@ -89,7 +88,6 @@ function calcularCircunferencia(){
     const valueUnit = unit.value;
 
     const circunferencia = formulaCircunferencia(value);
-
     result.innerText = `La circunferencia del circulo es: ${circunferencia} ${valueUnit}`
 }
 
@@ -101,6 +99,5 @@ function calcularDiametro(){
     const valueUnit = unit.value;
 
     const diametro = formulaDiametro(value);
-
     result.innerText = `El diametro del circulo es: ${diametro} ${valueUnit}`
 }
