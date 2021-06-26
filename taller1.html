@@ -68,6 +68,7 @@
                 <select name="" id="unidadCuadrado">
                   <option value="cm">cm</option>
                   <option value="m">m</option>
+                  <option value="mm">mm</option>
                 </select>
               </div>
               <div class="card--buttons">
@@ -164,19 +165,37 @@
                 <input
                   type="number"
                   placeholder="número"
-                  id="ladoCuadrado"
+                  id="radioCirculo"
                   class="input"
                 />
-                <select name="" id="">
+                <select name="" id="selectCirculo">
                   <option value="cm">cm</option>
                   <option value="m">m</option>
                 </select>
               </div>
               <div class="card--buttons">
-                <button class="button pinkprimary">Área</button>
-                <button class="button pinksecondary">Perímetro</button>
+                <button
+                  type="button"
+                  class="button pinkprimary"
+                  onclick="calcularAreaCirculo()"
+                >
+                  Área
+                </button>
+                <button
+                  type="button"
+                  class="button pinksecondary"
+                  onclick="calcularCircunferencia()"
+                >
+                  Circunferencia
+                </button>
               </div>
-              <button class="button pinkprimary">Diametro</button>
+              <button
+                type="button"
+                class="button pinkprimary"
+                onclick="calcularDiametro()"
+              >
+                Diametro
+              </button>
               <p class="card--form__subtitle">Resultado:</p>
               <div class="card--form__result">
                 <p class="text-result" id="resultCirulo"></p>
