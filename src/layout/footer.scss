@@ -1,0 +1,49 @@
+.footer-taller1 {
+  background-color: $color-pinklight;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
+
+  .footer-information ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+
+    a {
+      font: $body2;
+      text-decoration: none;
+      color: $color-pink;
+      &:hover {
+        color: $color-pinksecondary;
+      }
+    }
+  }
+}
+
+.footer-copyright {
+  font: $body2;
+  a {
+    color: #232323;
+  }
+}
+
+@include for-desktop-up {
+  .footer-taller1 {
+    height: 10vh;
+  }
+  .footer-information ul {
+    gap: 16px;
+  }
+}
+
+@include for-phone-tablet {
+  .footer-taller1 {
+    padding: 20px;
+    justify-content: center;
+  }
+  .footer-information ul {
+    gap: 4px;
+  }
+}

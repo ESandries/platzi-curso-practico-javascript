@@ -14,14 +14,9 @@
   }
 }
 
-@include for-phone-tablet {
-  .taller1-container {
-    height: 90vh;
-  }
-}
-
 @include for-desktop-up {
   .taller1-container {
+    height: 79vh;
     background-color: $color-pinklight;
   }
 }
