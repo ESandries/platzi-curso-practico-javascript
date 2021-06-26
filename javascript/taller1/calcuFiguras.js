@@ -45,7 +45,7 @@ function formulaAreaTriangulo(altura, base){
 }
 
 function formulaPerimetroTriangulo(ladoA, ladoB, base){
-    return ladoA +  ladoB + base;
+    return Number.parseInt(ladoA) +  Number.parseInt(ladoB) + Number.parseInt(base);
 }
 
 function calcularAlturaTriangulo(ladoA, ladoB, base){
