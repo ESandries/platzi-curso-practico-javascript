@@ -10,14 +10,28 @@
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+  }
+}
 
-    a {
-      font: $body2;
-      text-decoration: none;
-      color: $color-pink;
-      &:hover {
-        color: $color-pinksecondary;
-      }
+.footer-information.pink {
+  a {
+    font: $body2;
+    text-decoration: none;
+    color: $color-pink;
+    &:hover {
+      color: $color-pinksecondary;
+    }
+  }
+}
+
+.footer-taller1.blue {
+  background-color: $color-bluelight;
+  a {
+    font: $body2;
+    text-decoration: none;
+    color: $color-blueprimary;
+    &:hover {
+      color: $color-blue-secondary;
     }
   }
 }

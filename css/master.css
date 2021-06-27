@@ -145,13 +145,26 @@
   flex-wrap: wrap;
   list-style: none;
 }
-.footer-taller1 .footer-information ul a {
+
+.footer-information.pink a {
   font: 400 0.875rem/1.5rem Montserrat;
   text-decoration: none;
   color: #d2004c;
 }
-.footer-taller1 .footer-information ul a:hover {
+.footer-information.pink a:hover {
   color: #ab013e;
+}
+
+.footer-taller1.blue {
+  background-color: #7b61ff;
+}
+.footer-taller1.blue a {
+  font: 400 0.875rem/1.5rem Montserrat;
+  text-decoration: none;
+  color: #3504c0;
+}
+.footer-taller1.blue a:hover {
+  color: #3504c0;
 }
 
 .footer-copyright {
