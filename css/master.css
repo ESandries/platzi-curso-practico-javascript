@@ -5,6 +5,9 @@
   padding: 6px 12px;
   font: 600 1.125rem/1.6875rem Montserrat;
 }
+.button:hover {
+  box-shadow: 4px 2px #888888;
+}
 
 .pinkprimary {
   background-color: #d2004c;
@@ -23,6 +26,13 @@
   background-color: #3504c0;
   color: white;
   border: 2px solid #3504c0;
+  width: 100%;
+}
+
+.button.yellow {
+  background-color: #ffd900;
+  color: black;
+  border: 2px solid #ffd900;
   width: 100%;
 }
 
@@ -56,6 +66,10 @@
 
 .card__title.blue {
   color: #3504c0;
+}
+
+.card__title.yellow {
+  color: #ffd900;
 }
 
 .card--form {
@@ -132,6 +146,16 @@
   color: #3504c0;
 }
 
+.header-jspractico.yellow .nav-options ul a {
+  color: #ffe75e;
+}
+.header-jspractico.yellow .nav-options ul a:hover {
+  color: #bca000;
+}
+.header-jspractico.yellow .nav-options ul .weAreHere {
+  color: #ffd900;
+}
+
 .footer-taller1 {
   background-color: #fc8fb6;
   display: flex;
@@ -165,6 +189,18 @@
 }
 .footer-taller1.blue a:hover {
   color: #3504c0;
+}
+
+.footer-taller1.yellow {
+  background-color: #ffe75e;
+}
+.footer-taller1.yellow a {
+  font: 400 0.875rem/1.5rem Montserrat;
+  text-decoration: none;
+  color: black;
+}
+.footer-taller1.yellow a:hover {
+  color: #ffd900;
 }
 
 .footer-copyright {
@@ -219,6 +255,13 @@
     background-color: #7b61ff;
   }
   .taller1-container.blue .figuras-container {
+    justify-content: center;
+  }
+
+  .taller1-container.yellow {
+    background-color: #ffe75e;
+  }
+  .taller1-container.yellow .figuras-container {
     justify-content: center;
   }
 }

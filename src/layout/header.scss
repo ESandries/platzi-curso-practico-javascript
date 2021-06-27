@@ -36,11 +36,25 @@
     a {
       color: $color-bluelight;
       &:hover {
-        color: $color-blue-secondary;
+        color: $color-bluesecondary;
       }
     }
     .weAreHereBlue {
-      color: $color-blueprimary;
+      color: $color-blue;
+    }
+  }
+}
+
+.header-jspractico.yellow {
+  .nav-options ul {
+    a {
+      color: $color-yellowlight;
+      &:hover {
+        color: $color-yellowblack;
+      }
+    }
+    .weAreHere {
+      color: $color-yellow;
     }
   }
 }

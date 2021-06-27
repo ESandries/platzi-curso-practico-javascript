@@ -29,9 +29,20 @@
   a {
     font: $body2;
     text-decoration: none;
-    color: $color-blueprimary;
+    color: $color-blue;
     &:hover {
-      color: $color-blue-secondary;
+      color: $color-bluesecondary;
+    }
+  }
+}
+.footer-taller1.yellow {
+  background-color: $color-yellowlight;
+  a {
+    font: $body2;
+    text-decoration: none;
+    color: black;
+    &:hover {
+      color: $color-yellow;
     }
   }
 }
