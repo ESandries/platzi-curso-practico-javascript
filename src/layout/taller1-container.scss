@@ -19,4 +19,10 @@
     height: 79vh;
     background-color: $color-pinklight;
   }
+  .taller1-container.blue {
+    background-color: $color-bluelight;
+    .figuras-container {
+      justify-content: center;
+    }
+  }
 }

@@ -13,6 +13,13 @@
     a {
       text-decoration: none;
       font: $headline5;
+    }
+  }
+}
+
+.header-jspractico.pink {
+  .nav-options ul {
+    a {
       color: $color-pinklight;
       &:hover {
         color: $color-pink;
@@ -20,6 +27,20 @@
     }
     .weAreHere a {
       color: $color-pink;
+    }
+  }
+}
+
+.header-jspractico.blue {
+  .nav-options ul {
+    a {
+      color: $color-bluelight;
+      &:hover {
+        color: $color-blue-secondary;
+      }
+    }
+    .weAreHereBlue {
+      color: $color-blueprimary;
     }
   }
 }

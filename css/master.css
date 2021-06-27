@@ -19,6 +19,13 @@
   width: 100%;
 }
 
+.button.buttonblue {
+  background-color: #3504c0;
+  color: white;
+  border: 2px solid #3504c0;
+  width: 100%;
+}
+
 .card {
   background-color: white;
   display: flex;
@@ -45,6 +52,10 @@
 .card__title {
   font: 700 1.5rem/1.6499999762rem Lato;
   color: #d2004c;
+}
+
+.card__title.blue {
+  color: #3504c0;
 }
 
 .card--form {
@@ -99,13 +110,26 @@
 .header-jspractico .nav-options ul a {
   text-decoration: none;
   font: 700 1.25rem/1.6499999762rem Lato;
+}
+
+.header-jspractico.pink .nav-options ul a {
   color: #fc8fb6;
 }
-.header-jspractico .nav-options ul a:hover {
+.header-jspractico.pink .nav-options ul a:hover {
   color: #d2004c;
 }
-.header-jspractico .nav-options ul .weAreHere a {
+.header-jspractico.pink .nav-options ul .weAreHere a {
   color: #d2004c;
+}
+
+.header-jspractico.blue .nav-options ul a {
+  color: #7b61ff;
+}
+.header-jspractico.blue .nav-options ul a:hover {
+  color: #3504c0;
+}
+.header-jspractico.blue .nav-options ul .weAreHereBlue {
+  color: #3504c0;
 }
 
 .footer-taller1 {
@@ -176,6 +200,13 @@
   .taller1-container {
     height: 79vh;
     background-color: #fc8fb6;
+  }
+
+  .taller1-container.blue {
+    background-color: #7b61ff;
+  }
+  .taller1-container.blue .figuras-container {
+    justify-content: center;
   }
 }
 * {
