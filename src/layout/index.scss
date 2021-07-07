@@ -1,10 +1,6 @@
 .index.grid {
 }
 
-body {
-  height: 100vh;
-}
-
 .taller {
   display: flex;
   flex-direction: column;
@@ -48,6 +44,9 @@ body {
 }
 
 @include for-tablet-portrait-up {
+  body {
+    height: 100vh;
+  }
   main {
     height: 60%;
     display: grid;
