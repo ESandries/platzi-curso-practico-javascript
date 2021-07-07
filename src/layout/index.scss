@@ -13,8 +13,14 @@ body {
   height: 100%;
   a {
     text-decoration: none;
-    font: $headline5;
     color: white;
+    text-align: center;
+    h2 {
+      font: $headline5;
+    }
+    p {
+      font: $body2;
+    }
   }
 }
 
