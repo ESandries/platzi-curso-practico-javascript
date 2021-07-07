@@ -162,6 +162,10 @@
 .header-jspractico.index .nav-options ul a:hover {
   color: #1a1a1a;
 }
+.header-jspractico.index img {
+  height: 45px;
+  width: auto;
+}
 
 .footer-taller1 {
   background-color: #fc8fb6;
@@ -236,6 +240,12 @@
     gap: 4px;
   }
 }
+.indextitle {
+  font: 700 2rem/2rem Lato;
+  text-align: center;
+  padding: 0 20px 20px 20px;
+}
+
 .taller {
   display: flex;
   flex-direction: column;
@@ -257,22 +267,22 @@
 }
 
 @media (max-width: 599px) {
-  main {
+  .indexgrid {
     height: 60%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr, 1fr, 1fr, 1fr;
   }
-  main .taller1 {
+  .indexgrid .taller1 {
     background-color: royalblue;
   }
-  main .taller2 {
+  .indexgrid .taller2 {
     background-color: brown;
   }
-  main .taller3 {
+  .indexgrid .taller3 {
     background-color: antiquewhite;
   }
-  main .taller4 {
+  .indexgrid .taller4 {
     background-color: aqua;
   }
 }
@@ -281,28 +291,29 @@
     height: 100vh;
   }
 
-  main {
+  .indexgrid {
     height: 60%;
+    min-height: 500px;
     display: grid;
     grid-template-columns: 1fr, 1fr;
     grid-template-rows: 1fr, 1fr;
   }
-  main .taller1 {
+  .indexgrid .taller1 {
     background-color: royalblue;
     grid-column: 1/2;
     grid-row: 1/2;
   }
-  main .taller2 {
+  .indexgrid .taller2 {
     background-color: brown;
     grid-column: 2/3;
     grid-row: 1/2;
   }
-  main .taller3 {
+  .indexgrid .taller3 {
     background-color: antiquewhite;
     grid-column: 1/2;
     grid-row: 2/3;
   }
-  main .taller4 {
+  .indexgrid .taller4 {
     background-color: aqua;
     grid-column: 2/3;
     grid-row: 2/3;
