@@ -253,6 +253,8 @@
   align-items: center;
   height: 100%;
   min-height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .taller a {
   text-decoration: none;
@@ -260,10 +262,26 @@
   text-align: center;
 }
 .taller a h2 {
-  font: 700 1.25rem/1.6499999762rem Lato;
+  font: 700 1.5rem/1.6499999762rem Lato;
 }
 .taller a p {
-  font: 400 0.875rem/1.5rem Montserrat;
+  font: 400 1.125rem/1.6875rem Montserrat;
+}
+
+.taller1 {
+  background-image: url("../../images/index-taller1.png");
+}
+
+.taller2 {
+  background-image: url("../../images/index-taller.png");
+}
+
+.taller3 {
+  background-image: url("../../images/index-taller3.png");
+}
+
+.taller4 {
+  background-image: url("../../images/thumbnail-talle1.png");
 }
 
 @media (max-width: 599px) {

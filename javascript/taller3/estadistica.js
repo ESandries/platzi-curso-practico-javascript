@@ -11,9 +11,14 @@ function formulaMediaAritmetica(lista){
 } 
 
 function calcularMediaAritmetica(){
+    let resultSelect = document.getElementById("resultEstadistica");
+
     let inputSelect = document.getElementById("datos");
     let value = inputSelect.value;
-    const promedio = formulaMediaAritmetica([value]);
+    console.log(value)
+    let valueArray = Array.from(value.split(','),Number)
+    console.log(valueArray)
+    let promedio = formulaMediaAritmetica(valueArray);
 
-    console.log(promedio);
+    resultSelect.innerText = "El promedio de los datos ingresados es: " +  promedio;
 }
