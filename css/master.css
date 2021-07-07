@@ -156,6 +156,13 @@
   color: #ffd900;
 }
 
+.header-jspractico.index .nav-options ul a {
+  color: #363636;
+}
+.header-jspractico.index .nav-options ul a:hover {
+  color: #1a1a1a;
+}
+
 .footer-taller1 {
   background-color: #fc8fb6;
   display: flex;
@@ -227,6 +234,71 @@
 
   .footer-information ul {
     gap: 4px;
+  }
+}
+body {
+  height: 100vh;
+}
+
+.taller {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.taller a {
+  text-decoration: none;
+  font: 700 1.25rem/1.6499999762rem Lato;
+  color: white;
+}
+
+@media (max-width: 599px) {
+  main {
+    height: 60%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr;
+  }
+  main .taller1 {
+    background-color: royalblue;
+  }
+  main .taller2 {
+    background-color: brown;
+  }
+  main .taller3 {
+    background-color: antiquewhite;
+  }
+  main .taller4 {
+    background-color: aqua;
+  }
+}
+@media (min-width: 600px) {
+  main {
+    height: 60%;
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr;
+  }
+  main .taller1 {
+    background-color: royalblue;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  main .taller2 {
+    background-color: brown;
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  main .taller3 {
+    background-color: antiquewhite;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  main .taller4 {
+    background-color: aqua;
+    grid-column: 2/3;
+    grid-row: 2/3;
   }
 }
 .taller1-container {

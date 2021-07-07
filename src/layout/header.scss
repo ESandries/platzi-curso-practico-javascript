@@ -58,3 +58,14 @@
     }
   }
 }
+
+.header-jspractico.index {
+  .nav-options ul {
+    a {
+      color: $color-blacklight;
+      &:hover {
+        color: $color-black;
+      }
+    }
+  }
+}
