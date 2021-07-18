@@ -1,5 +1,5 @@
 # platzi-curso-practico-javascript
-
+Proyecto creado por Emanuel Sandries. 
 ...
 
 ## Taller #1: figuras geométricas
@@ -23,4 +23,3 @@
 - Tercer paso: crear funciones
 - Cuarto paso: integrar JS con HTML
 
-# curs
