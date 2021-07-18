@@ -11,7 +11,14 @@ function formulaMediaAritmetica(lista){
 } 
 
 function formulaMediana(list){
-    let lista = list;
+
+    let listOrder = list;
+    listOrder.sort((a, b) => a - b);
+    console.log("God is alive"+listOrder);
+
+    let lista = listOrder;
+    
+
     const mitadlista = parseInt(lista.length / 2);
     let mediana;
 
@@ -40,6 +47,23 @@ function formulaMediana(list){
     console.log(mediana);
 
     return mediana;
+}
+
+function formulaMode(list){
+    let lista = list;
+
+    const listaCount = {};
+
+    lista.map(
+        function (elemento){
+            if(listaCount[elemento]){
+                listaCount[elemento] += 1;
+            } else{
+            listaCount[elemento] = 1;
+            }
+        }
+    )
+
 }
 
 
