@@ -46,6 +46,17 @@
     }
   }
 }
+.footer-taller1.index {
+  background-color: white;
+  a {
+    font: $body2;
+    text-decoration: none;
+    color: black;
+    &:hover {
+      color: $color-yellow;
+    }
+  }
+}
 
 .footer-copyright {
   font: $body2;

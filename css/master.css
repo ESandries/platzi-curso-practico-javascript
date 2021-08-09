@@ -214,6 +214,18 @@
   color: #ffd900;
 }
 
+.footer-taller1.index {
+  background-color: white;
+}
+.footer-taller1.index a {
+  font: 400 0.875rem/1.5rem Montserrat;
+  text-decoration: none;
+  color: black;
+}
+.footer-taller1.index a:hover {
+  color: #ffd900;
+}
+
 .footer-copyright {
   font: 400 0.875rem/1.5rem Montserrat;
 }
