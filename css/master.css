@@ -102,11 +102,107 @@
   width: 100%;
   height: 100%;
   padding: 10px;
-  border: 2px solid #312f2f;
+  border: 2px solid rgb(49, 47, 47);
   border-radius: 7px;
 }
 .card--form__result p {
   font: 400 0.875rem/1.5rem Montserrat;
+}
+
+/*ESandries Styles*/
+.ESandries--header {
+  background-color: #210511;
+}
+.ESandries--header .esandries--wrapper {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  max-width: 1200px;
+  justify-content: space-between;
+}
+.ESandries--header .esandries--wrapper .esandries--header--navbar {
+  width: 40%;
+}
+.ESandries--header .esandries--wrapper .esandries--header--navbar ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.ESandries--header .esandries--wrapper a {
+  font: 700 0.875rem/1.6875rem Montserrat;
+  text-decoration: none;
+  color: #FF0380;
+}
+.ESandries--header .esandries--wrapper .header--callToActionBtn {
+  background-color: #FF0380;
+  padding-inline: 12px;
+  padding-block: 6px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.ESandries--header .esandries--wrapper .header--callToActionBtn a {
+  color: #210511;
+  margin: 0;
+}
+
+.project {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project--title {
+  font-size: 1.75em;
+  font-weight: bold;
+  font-family: Lato;
+  color: #FF0380;
+  text-align: center;
+  padding-block-start: 2rem;
+  padding-block-end: 1rem;
+}
+
+.project--description {
+  max-width: 588px;
+  font-size: 1em;
+  font-weight: 400;
+  font-family: Montserrat;
+  color: white;
+  margin: 0 auto;
+  padding-block-end: 2.5rem;
+}
+
+.calcuCard {
+  border: solid 2px white;
+  display: flex;
+  flex-direction: column;
+  padding-block: 30px;
+  padding-inline: 10px;
+  gap: 8px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+.calcuCard--title {
+  font: 700 1.5rem/1.6499999762rem Lato;
+  color: white;
+}
+
+.calcuCard--formSubtitle {
+  font: 400 1.125rem/1.6875rem Montserrat;
+  color: white;
+}
+
+.caluCard--form {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .header-jspractico {
@@ -160,7 +256,7 @@
   color: #363636;
 }
 .header-jspractico.index .nav-options ul a:hover {
-  color: #1a1a1a;
+  color: rgb(26, 26, 26);
 }
 .header-jspractico.index img {
   height: 45px;
@@ -388,6 +484,10 @@
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
+  background-color: #1A040D;
 }
 
 /*# sourceMappingURL=master.css.map */

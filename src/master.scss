@@ -5,6 +5,12 @@
 @import "./components/button.scss";
 @import "./components/card.scss";
 
+/*ESandries Styles*/
+@import "./layout/esandries--header.scss";
+@import "./layout/esandries--project.scss";
+@import "./components/calcuCard.scss";
+
+
 @import "./layout/header.scss";
 @import "./layout/footer.scss";
 @import "./layout/index.scss";
@@ -13,4 +19,8 @@
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
+  background-color: $esandries-dark;
 }

@@ -27,6 +27,7 @@
   font: $headline4;
   color: $color-pink;
 }
+
 .card__title.blue {
   color: $color-blue;
 }
@@ -49,6 +50,7 @@
 .div-Input-Cuadrado {
   display: flex;
   gap: 16px;
+
   input {
     padding: 8px;
     width: 100%;
