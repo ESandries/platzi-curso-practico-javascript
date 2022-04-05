@@ -1,0 +1,46 @@
+.ESandries--header {
+    background-color: $esandries-semidark;
+
+    .esandries--wrapper {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        height: 60px;
+        max-width: 1200px;
+        justify-content: space-between;
+
+        .esandries--header--navbar {
+            width: 40%;
+
+            ul {
+                display: flex;
+
+                justify-content: space-between;
+                list-style: none;
+            }
+        }
+
+        a {
+            font: $body2b;
+            text-decoration: none;
+            color: $esandries-pink-primary;
+        }
+
+        .header--callToActionBtn {
+            a {
+                color: $esandries-semidark;
+                margin: 0;
+            }
+
+            background-color: $esandries-pink-primary;
+            padding-inline: 12px;
+            padding-block: 6px;
+            border-radius: 8px;
+            -webkit-border-radius: 8px;
+            -moz-border-radius: 8px;
+            -ms-border-radius: 8px;
+            -o-border-radius: 8px;
+        }
+    }
+
+}

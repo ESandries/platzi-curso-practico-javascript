@@ -1,0 +1,25 @@
+// Styles for the container
+.project {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project--title {
+    font-size: 1.75em;
+    font-weight: bold;
+    font-family: Lato;
+    color: $esandries-pink-primary;
+    text-align: center;
+    padding-block-start: 2rem;
+    padding-block-end: 1rem;
+}
+
+.project--description {
+    max-width: 588px;
+    font-size: 1em;
+    font-weight: 400;
+    font-family: Montserrat;
+    color: white;
+    margin: 0 auto;
+    padding-block-end: 2.5rem;
+}
