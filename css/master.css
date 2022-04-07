@@ -120,6 +120,7 @@
   height: 60px;
   max-width: 1200px;
   justify-content: space-between;
+  padding-inline: 24px;
 }
 .ESandries--header .esandries--wrapper .esandries--header--navbar {
   width: 40%;
@@ -151,6 +152,7 @@
 
 .project {
   max-width: 1200px;
+  padding-inline: 24px;
   margin: 0 auto;
 }
 
@@ -174,6 +176,11 @@
   padding-block-end: 2.5rem;
 }
 
+.project--container {
+  gap: 24px;
+  display: flex;
+}
+
 .calcuCard {
   border: solid 2px white;
   display: flex;
@@ -188,6 +195,20 @@
   -o-border-radius: 12px;
 }
 
+@media (max-width: 1024px) {
+  .calcuCard {
+    width: 100%;
+    height: 400px;
+  }
+}
+@media (min-width: 1024px) {
+  .calcuCard {
+    padding-inline: 24px;
+    min-width: 273px;
+    width: 28%;
+    max-width: 384px;
+  }
+}
 .calcuCard--title {
   font: 700 1.5rem/1.6499999762rem Lato;
   color: white;
@@ -203,6 +224,57 @@
   height: 100%;
   flex-direction: column;
   gap: 8px;
+}
+
+.calcuCard--inputContainer {
+  display: flex;
+  gap: 16px;
+}
+.calcuCard--inputContainer input {
+  padding: 8px;
+  width: 100%;
+}
+
+.calcuCard--input {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  color: white;
+}
+.calcuCard--input::placeholder {
+  color: #FF68B3;
+  font-family: Montserrat;
+}
+
+.calcuCard--btnprimary {
+  background-color: white;
+  color: #1A040D;
+  border: 2px solid white;
+  width: 100%;
+}
+
+.calcuCard--btnsecondary {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  width: 100%;
+}
+
+.calcuCard--result {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 7px;
+}
+.calcuCard--result p {
+  font: 400 0.875rem/1.5rem Montserrat;
+  color: white;
 }
 
 .header-jspractico {

@@ -12,6 +12,22 @@
     -o-border-radius: 12px;
 }
 
+@include for-phone-tablet {
+    .calcuCard {
+        width: 100%;
+        height: 400px;
+    }
+}
+
+@include for-desktop-up {
+    .calcuCard {
+        padding-inline: 24px;
+        min-width: 273px;
+        width: 28%;
+        max-width: 384px;
+    }
+}
+
 .calcuCard--title {
     font: $headline4;
     color: white;
@@ -27,4 +43,58 @@
     height: 100%;
     flex-direction: column;
     gap: 8px;
+}
+
+.calcuCard--inputContainer {
+    display: flex;
+    gap: 16px;
+
+    input {
+        padding: 8px;
+        width: 100%;
+    }
+}
+
+.calcuCard--input {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    color: white;
+
+    &::placeholder {
+        color: $esandries-pink-placeholder;
+        font-family: Montserrat;
+    }
+}
+
+.calcuCard--btnprimary {
+    background-color: white;
+    color: $esandries-dark;
+    border: 2px solid white;
+    width: 100%;
+}
+
+.calcuCard--btnsecondary {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    width: 100%;
+}
+
+.calcuCard--result {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 7px;
+
+    p {
+        font: $body2;
+        color: white;
+    }
 }
