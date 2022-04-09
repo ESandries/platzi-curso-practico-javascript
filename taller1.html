@@ -62,7 +62,7 @@
     <main>
       <div class="project">
         <h2 class="project--title">PLTZ - Curso de JavaScript Práctico</h2>
-        <p class="project--description">Este fue el primer taller del Curso de Manipulación del DOM. Aquí ESandries aprendió a traer datos de una API, crear elementos con esos datos y luego insertarlos al html. </p>
+        <p class="project--description">Este es el proyecto que elaboré en el curso práctico de JavaScript que esta disponible en Platzi. En este curso cree funciones usando JavaScript y la modificación del DOM para crear la interactividad. </p>
         <div class="project--container">
           <div class="calcuCard">
             <!--cuadrado-->
@@ -97,7 +97,7 @@
               </div>
               <p class="calcuCard--formSubtitle">Resultado:</p>
               <div class="calcuCard--result">
-                <p class="text-result" id="resultCuadrado"></p>
+                <p class="calcuCard--textresult" id="resultCuadrado"></p>
               </div>
             </form>
           </div>
@@ -159,7 +159,7 @@
               </div>
               <p class="calcuCard--formSubtitle">Resultado:</p>
               <div class="calcuCard--result">
-                <p class="text-result" id="resultTriangulo"></p>
+                <p class="calcuCard--textresult" id="resultTriangulo"></p>
               </div>
             </form>
           </div>
@@ -176,24 +176,20 @@
                   type="number"
                   placeholder="número"
                   id="radioCirculo"
-                  class="input"
+                  class="calcuCard--input"
                 />
-                <select name="" id="selectCirculo">
-                  <option value="cm">cm</option>
-                  <option value="m">m</option>
-                </select>
               </div>
               <div class="card--buttons">
                 <button
                   type="button"
-                  class="button pinkprimary"
+                  class="button calcuCard--btnprimary"
                   onclick="calcularAreaCirculo()"
                 >
                   Área
                 </button>
                 <button
                   type="button"
-                  class="button pinksecondary"
+                  class="button calcuCard--btnprimary"
                   onclick="calcularCircunferencia()"
                 >
                   Circunferencia
@@ -201,14 +197,14 @@
               </div>
               <button
                 type="button"
-                class="button pinkprimary"
+                class="button calcuCard--btnsecondary"
                 onclick="calcularDiametro()"
               >
                 Diametro
               </button>
               <p class="calcuCard--formSubtitle">Resultado:</p>
-              <div class="card--form__result">
-                <p class="text-result" id="resultCirulo"></p>
+              <div class="calcuCard--result">
+                <p class="calcuCard--textresult" id="resultCirulo"></p>
               </div>
             </form>
           </div>

@@ -15,26 +15,22 @@ function formulaPerimetroCuadrado(lado){
 
 
 function calcularAreaCuadrado(){
-    const  input = document.getElementById("ladoCuadrado");
+    const input = document.getElementById("ladoCuadrado");
     const result = document.getElementById("resultCuadrado");
-    const unit = document.getElementById("unidadCuadrado");
-    const unitValue = unit.value;
     const value = input.value;
     
     const area = formularAreaCuadrado(value);
-    result.innerText = `El área es ${area} ${unitValue}'2`;
+    result.innerText = `El área es ${area}`;
 }
 
 function calcularPerimetroCuadrado(){
     const input = document.getElementById("ladoCuadrado");
     const result = document.getElementById("resultCuadrado");
-    const unit = document.getElementById("unidadCuadrado");
-    const unitValue = unit.value;
     const value = input.value;
 
     const perimetro = formulaPerimetroCuadrado(value);
 
-    result.innerText = `El perímetro es ${perimetro} ${unitValue}`;
+    result.innerText = `El perímetro es ${perimetro}`;
 
 }
 
@@ -58,8 +54,6 @@ function calcularAlturaTriangulo(ladoA, ladoB, base){
 
 function calcularAreaTriangulo(){
     const result = document.getElementById("resultTriangulo");
-    const unit = document.getElementById("selectBaseT")
-    let unitValue = unit.value;
     let ladoA = document.getElementById("ladoAtriangulo");
     let ladoAValue = ladoA.value;
     let ladoB = document.getElementById("ladoBTriangulo");
@@ -70,14 +64,12 @@ function calcularAreaTriangulo(){
     let altura = calcularAlturaTriangulo(ladoAValue, ladoBValue, baseValue);
     let area = formulaAreaTriangulo(altura, baseValue);
     
-    result.innerText = `El área del triangulo es ${area} ${unitValue}´2`
+    result.innerText = `El área del triangulo es ${area}`
     
 }
 
 function calcularPerimetroTriangulo(){
     const result = document.getElementById("resultTriangulo");
-    const unit = document.getElementById("selectBaseT")
-    let unitValue = unit.value;
     let ladoA = document.getElementById("ladoAtriangulo");
     let ladoAValue = ladoA.value;
     let ladoB = document.getElementById("ladoBTriangulo");
@@ -87,7 +79,7 @@ function calcularPerimetroTriangulo(){
 
     let perimetro = formulaPerimetroTriangulo(ladoAValue, ladoBValue, baseValue);
     
-    result.innerText = `El perímetro del triangulo es ${perimetro} ${unitValue}`
+    result.innerText = `El perímetro del triangulo es ${perimetro}`
     
 }
 
@@ -121,32 +113,26 @@ function formulaAreaCirculo(radio){
 function calcularAreaCirculo(){
     const input = document.getElementById("radioCirculo");
     const result = document.getElementById("resultCirulo");
-    const unit = document.getElementById("selectCirculo");
     const value = input.value;
-    const valueUnit = unit.value;
 
     const area = formulaAreaCirculo(value);
-    result.innerText = `El área del circulo es: ${area} ${valueUnit}`
+    result.innerText = `El área del circulo es: ${area}`
 }
 
 function calcularCircunferencia(){
     const input = document.getElementById("radioCirculo");
     const result = document.getElementById("resultCirulo");
-    const unit = document.getElementById("selectCirculo");
     const value = input.value;
-    const valueUnit = unit.value;
 
     const circunferencia = formulaCircunferencia(value);
-    result.innerText = `La circunferencia del circulo es: ${circunferencia} ${valueUnit}`
+    result.innerText = `La circunferencia del circulo es: ${circunferencia}`
 }
 
 function calcularDiametro(){
     const input = document.getElementById("radioCirculo");
     const result = document.getElementById("resultCirulo");
-    const unit = document.getElementById("selectCirculo");
     const value = input.value;
-    const valueUnit = unit.value;
 
     const diametro = formulaDiametro(value);
-    result.innerText = `El diametro del circulo es: ${diametro} ${valueUnit}`
+    result.innerText = `El diametro del circulo es: ${diametro}`
 }

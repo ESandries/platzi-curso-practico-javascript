@@ -150,6 +150,11 @@
   margin: 0;
 }
 
+@media (max-width: 1024px) {
+  .esandries--header--navbar {
+    display: none;
+  }
+}
 .project {
   max-width: 1200px;
   padding-inline: 24px;
@@ -179,6 +184,9 @@
 .project--container {
   gap: 24px;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .calcuCard {
@@ -204,8 +212,7 @@
 @media (min-width: 1024px) {
   .calcuCard {
     padding-inline: 24px;
-    min-width: 273px;
-    width: 28%;
+    min-width: 280px;
     max-width: 384px;
   }
 }
@@ -274,6 +281,10 @@
 }
 .calcuCard--result p {
   font: 400 0.875rem/1.5rem Montserrat;
+  color: white;
+}
+
+.calcuCard--textresult {
   color: white;
 }
 

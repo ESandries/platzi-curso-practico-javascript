@@ -22,8 +22,7 @@
 @include for-desktop-up {
     .calcuCard {
         padding-inline: 24px;
-        min-width: 273px;
-        width: 28%;
+        min-width: 280px;
         max-width: 384px;
     }
 }
@@ -97,4 +96,8 @@
         font: $body2;
         color: white;
     }
+}
+
+.calcuCard--textresult{
+    color: white;
 }

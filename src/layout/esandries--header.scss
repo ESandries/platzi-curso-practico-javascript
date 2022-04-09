@@ -43,5 +43,10 @@
             -o-border-radius: 8px;
         }
     }
+}
 
+@include for-phone-tablet {
+    .esandries--header--navbar{
+       display: none;
+    }
 }
