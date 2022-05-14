@@ -62,7 +62,7 @@
     <main>
       <div class="project">
         <h2 class="project--title">PLTZ - Curso de JavaScript Práctico</h2>
-        <p class="project--description">Este es el proyecto que elaboré en el curso práctico de JavaScript que esta disponible en Platzi. En este curso cree funciones usando JavaScript y la modificación del DOM para crear la interactividad. </p>
+        <p class="project--description">Este es el proyecto que elaboré en el curso práctico de JavaScript que esta disponible en Platzi. En este curso cree funciones usando JavaScript y la modificación del DOM para crear la interactividad. <br> <br> Las 3 primeras tarjetas son calculadoras que son utiles si quieres conseguir areas o perimetros de una manera muy rápida. </p>
         <div class="project--container">
           <div class="calcuCard">
             <!--cuadrado-->
@@ -208,9 +208,99 @@
               </div>
             </form>
           </div>
+
+          <div class="calcuCard">
+            <!--cuadrado-->
+            <p class="calcuCard--title">Precio con descuento</p>
+            <form action="" class="caluCard--form">
+              <label for="priceInput" class="calcuCard--formSubtitle"
+                >¿Cuál es el precio?</label
+              >
+              <div class="calcuCard--inputContainer">
+                <input
+                  type="number"
+                  placeholder="Precio"
+                  id="priceInput"
+                  class="calcuCard--input"
+                />
+              </div>
+              <label for="descuento" class="calcuCard--formSubtitle"
+                >¿Cuál es el porentaje de descuento?</label
+              >
+              <div class="div-Input-Cuadrado">
+                <input
+                  type="number"
+                  placeholder="Descuento"
+                  id="descuento"
+                  class="calcuCard--input"
+                />
+              </div>
+              <div class="card--buttons">
+                <button
+                  type="button"
+                  class="button calcuCard--btnprimary"
+                  onclick="calcularPrecioConDescuento()"
+                >
+                  Calcular precio con descuento
+                </button>
+              </div>
+              <p class="calcuCard--formSubtitle">Resultado:</p>
+              <div class="calcuCard--result">
+                <p class="calcuCard--textresult" id="resultDescuento"></p>
+              </div>
+            </form>
+          </div>
+
+          <div class="calcuCard">
+            <!--cuadrado-->
+            <p class="calcuCard--title">Promedio, media y moda</p>
+            <form action="" class="caluCard--form">
+              <label for="datos" class="calcuCard--formSubtitle"
+                >Inserta tus datos</label
+              >
+              <div class="calcuCard--inputContainer">
+                <input
+                  type="text"
+                  placeholder="Ej: 20, 12, 120, 021"
+                  id="datos"
+                  class="calcuCard--input"
+                />
+              </div>
+              <div class="card--buttons">
+                <button
+                  type="button"
+                  class="button calcuCard--btnprimary"
+                  onclick="calcularMediaAritmetica()"
+                >
+                  Media
+                </button>
+                <button
+                  type="button"
+                  class="button calcuCard--btnsecondary"
+                  onclick="calcularMediana()"
+                >
+                  Mediana
+                </button>
+                <button
+                  type="button"
+                  class="button calcuCard--btnprimary"
+                  onclick="calcularPrecioConDescuento()"
+                >
+                  Moda
+                </button>
+              </div>
+              <p class="calcuCard--formSubtitle">Resultado:</p>
+              <div class="calcuCard--result">
+                <p class="calcuCard--textresult" id="resultEstadistica"></p>
+              </div>
+            </form>
+          </div>
+
         </div>
       </div>
     </main>
     <script src="./javascript/taller1/calcuFiguras.js"></script>
+    <script src="./javascript/taller2/descuentos.js"></script>
+    <script src="./javascript/taller3/estadistica.js"></script>
   </body>
 </html>

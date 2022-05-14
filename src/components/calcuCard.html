@@ -1,0 +1,44 @@
+<div class="calcuCard">
+    <!--Circulo-->
+    <p class="calcuCard--title">Circulo</p>
+    <form action="" class="caluCard--form">
+      <label for="ladoCuadrado" class="calcuCard--formSubtitle"
+        >¿Cuál es el radio?</label
+      >
+      <div class="calcuCard--inputContainer">
+        <input
+          type="number"
+          placeholder="número"
+          id="radioCirculo"
+          class="calcuCard--input"
+        />
+      </div>
+      <div class="card--buttons">
+        <button
+          type="button"
+          class="button calcuCard--btnprimary"
+          onclick="calcularAreaCirculo()"
+        >
+          Área
+        </button>
+        <button
+          type="button"
+          class="button calcuCard--btnprimary"
+          onclick="calcularCircunferencia()"
+        >
+          Circunferencia
+        </button>
+      </div>
+      <button
+        type="button"
+        class="button calcuCard--btnsecondary"
+        onclick="calcularDiametro()"
+      >
+        Diametro
+      </button>
+      <p class="calcuCard--formSubtitle">Resultado:</p>
+      <div class="calcuCard--result">
+        <p class="calcuCard--textresult" id="resultCirulo"></p>
+      </div>
+    </form>
+  </div>
